@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Raleway", sans-serif;
+    list-style: none;
+    outline: none;
+}
+body{
+    background: #e3f2fd;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+.container .color{
+    background-color: #fff;
+    margin: 13px;
+    padding: 7px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3 ease;
+    -webkit-transition: transform 0.3 ease;
+    -moz-transition: transform 0.3 ease;
+    -ms-transition: transform 0.3 ease;
+    -o-transition: transform 0.3 ease;
+}
+.container .color:active{
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+.color .rect-box{
+    width: 185px;
+    height: 188px;
+    background: #8a6cff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.color:hover .rect-box{
+    filter: brightness(106%);
+    -webkit-filter: brightness(106%);
+}
+.color .hex-value{
+    display: block;
+    color: #444;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 12px 0 8px;
+    text-transform: uppercase;
+}
+.refresh-btn{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 12px 0 8px;
+    padding: 12px 20px;
+    background: #8a6cff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    position: fixed;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+
+@media screen and (max-width: 510px){
+    .container{
+        margin: 10px;
+    }
+    .container .color{
+        margin: 8px;
+        padding: 5px;
+    }
+    .color .rect-box{
+        width: 145px;
+        height: 148px;
+    }
+    .color .hex-value{
+        font-size: 12px;
+}
+}
