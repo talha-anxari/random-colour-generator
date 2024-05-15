@@ -70,7 +70,7 @@ body{
     font-weight: 600;
     margin: 12px 0 8px;
     padding: 12px 20px;
-    background: #8a6cff;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
     border: 2px solid #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     position: fixed;
